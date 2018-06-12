@@ -3,9 +3,10 @@ package com.project.paymentplans.model.plan;
 import com.project.paymentplans.model.fee.Fee;
 
 import java.util.List;
+import java.util.Set;
 
 public interface PaymentPlan {
-    List<Fee> getFees();
+    Set<Fee> getFees();
     float getTotalFee();
     String getDebtorName();
     String getDebtorId();

@@ -1,20 +1,16 @@
 package com.project.paymentplans.model.plan;
 
-import javax.validation.constraints.NotBlank;
+public class PaymentPlanServiceDTO {
 
-public class PaymentPlanCreationParams {
-
-    @NotBlank
     private String debtorName;
 
-    @NotBlank
-    private int debtorId;
+    private String debtorId;
 
-    @NotBlank   
     private int fees;
 
-    @NotBlank
     private float feeAmount;
+
+    private String planId;
 
     public String getDebtorName() {
         return debtorName;
@@ -24,11 +20,11 @@ public class PaymentPlanCreationParams {
         this.debtorName = debtorName;
     }
 
-    public int getDebtorId() {
+    public String getDebtorId() {
         return debtorId;
     }
 
-    public void setDebtorId(int debtorId) {
+    public void setDebtorId(String debtorId) {
         this.debtorId = debtorId;
     }
 
@@ -44,7 +40,15 @@ public class PaymentPlanCreationParams {
         return feeAmount;
     }
 
-    public void setFeeAmount(int feeAmount) {
+    public void setFeeAmount(float feeAmount) {
         this.feeAmount = feeAmount;
+    }
+
+    public String getPlanId() {
+        return planId;
+    }
+
+    public void setPlanId(String planId) {
+        this.planId = planId;
     }
 }
