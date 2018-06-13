@@ -7,5 +7,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PlanRepository extends JpaRepository<PaymentPlan, Long>{
+public interface PlanRepository extends JpaRepository<Plan, Long>{
 }
